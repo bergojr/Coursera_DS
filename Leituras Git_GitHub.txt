@@ -1,0 +1,49 @@
+Checa o diretorio corrente
+pwd
+
+Inicializa um repositório local no diretório atual
+
+git init 
+
+Aponta o repositório local para um repositório criado no GitHub
+
+git remote add origin https://github.com/[nome de usuário]/[nomerepositorio].git
+
+
+Para fazer uma cópia de um repositório no GitHub usa-se o comando:
+Importante: o repositóripo vai ser clonado do diretório corrente
+git clone https://github.com/[nome de usuário]/[nomerepositorio].git
+
+Quando queremos que arquivos no repositório sjam versionados:
+
+git add .  	-> adiciona todas os arquivos novos ao controle de versão
+git add -u	-> atualiza o rastreamento de arquivos cujo nome mudaram ou foram alterados
+git add -A	-> faz as duas opções acima
+
+Para comitar modificações a serem salvas em uma versão intermediária
+Importante: atualiza apenas o repositório local
+
+git commit -m "Descrição do commit"
+
+
+Atualiza os comits no repositório remoto
+
+git push
+
+Para trabalhar em uma versão do mesmo diretório é possível criar uma branch
+
+git checkout -b branchname
+
+Para checar a branch atual 
+
+git branch
+
+Para voltar para o branch master
+git checkout master
+
+referencias:
+http:// git-scm.com/doc
+https:// help.github.com
+
+
+
